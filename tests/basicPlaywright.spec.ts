@@ -5,7 +5,7 @@ test.beforeEach(async ({ page }) => {
     await page.goto('');
 }  );
 
-test('How to interact with list of element', async ({ page }) => {      
+test('How to interact with list of elements', async ({ page }) => {      
     await expect(page.getByTestId('cta-primary')).toHaveCount(3);
 
     // Get the count of elements with data-testid="cta-primary"
