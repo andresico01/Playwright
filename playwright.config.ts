@@ -30,7 +30,7 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
     baseURL: 'https://www.leagueoflegends.com/es-es/', 
-    trace: 'on-first-retry',      // on-first-retry, on, off    
+    trace: 'on-first-retry',      // on-first-retry    
     video: 'on',   
     screenshot: 'on',
     timezoneId: 'Europe/Madrid',
@@ -55,15 +55,10 @@ export default defineConfig({
   
 
     /* Test against mobile viewports. */
-    // {
-    //   name: 'Mobile Chrome',
-    //   use: { ...devices['Pixel 5'] },
-    // },
-    // {
-    //   name: 'Mobile Safari',
-    //   use: { ...devices['iPhone 12'] },
-    // },
-
+    {
+      name: 'Mobile Chrome',
+      use: { ...devices['Pixel 5'] },
+    },
     /* Test against branded browsers. */
     // {
     //   name: 'Microsoft Edge',
