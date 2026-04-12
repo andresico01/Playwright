@@ -37,7 +37,7 @@ test('How to interact with list of elements', async ({ page }) => {
     // Or used filer to click on the element with specific text
     
     
-    await page.getByTestId('cta-primary').filter({ hasText: 'Juar gratis' }).click();
+    await page.getByTestId('cta-primary').filter({ hasText: 'Jugar gratis' }).click();
     await page.getByTestId('close').click();
     /* 
     this implicitly waits is to can see the action in the video result, 

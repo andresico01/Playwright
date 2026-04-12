@@ -34,6 +34,7 @@ export default defineConfig({
     video: 'on',   
     screenshot: 'on',
     timezoneId: 'Europe/Madrid',
+    locale: 'es-ES',
   
   },
     outputDir: 'test-results/',
