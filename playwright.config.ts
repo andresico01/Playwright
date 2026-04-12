@@ -60,6 +60,15 @@ export default defineConfig({
       name: 'Mobile Chrome',
       use: { ...devices['Pixel 5'] },
     },
+/*
+    {
+      name:'Mobile Firefox',
+      use: { 
+        ...devices['Pixel 5'],
+        browserName: 'firefox'
+      },
+    }
+      */
     /* Test against branded browsers. */
     // {
     //   name: 'Microsoft Edge',
