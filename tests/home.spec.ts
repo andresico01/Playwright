@@ -10,7 +10,6 @@ test.describe('Home page tests', () => {
     test('How to interact with list of elements', async ({ page,isMobile }) => {
         const homePage = new HomePage(page, isMobile);
         if (isMobile) {
-         //   await page.getByRole('button', { name: 'presentation' }).click();
             await page.getByTestId('riotbar:mobile:menu:button-open').click();
         }
         const noticias = await homePage.getNoticiasGame();

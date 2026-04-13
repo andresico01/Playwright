@@ -9,7 +9,8 @@
     "paths": {
       "@page/*": ["src/page/*"],
       "@decorator/*": ["src/utils/decorator/*"],
-      "@navigate/*": ["src/utils/navigate/*"]
+      "@navigate/*": ["src/utils/navigate/*"],
+      "@fixture/*": ["src/fixture/*"]
     },
     "baseUrl": ".", 
     "allowImportingTsExtensions": false,
