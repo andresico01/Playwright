@@ -32,7 +32,7 @@ test.describe('Test group', () => {
       const riotPage = new RiotPage(page);
       const homePage = new HomePage(page, isMobile);
       if (isMobile) {
-          await page.getByRole('button', { name: 'Aceptar todo' }).click();
+      
           await page.getByTestId('riotbar:mobile:menu:button-open').click();
       }
       
