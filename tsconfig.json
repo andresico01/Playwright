@@ -1,0 +1,33 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    
+    "paths": {
+      "@page/*": ["src/page/*"],
+      "@decorator/*": ["src/utils/decorator/*"],
+      "@navigate/*": ["src/utils/navigate/*"],
+      "@fixture/*": ["src/fixture/*"]
+    },
+    "baseUrl": ".", 
+    "allowImportingTsExtensions": false,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "types": [],
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+  },
+ "include": ["src/**/*", "tests/**/*"]
+}

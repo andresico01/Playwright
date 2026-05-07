@@ -35,7 +35,9 @@ test('How to interact with list of elements', async ({ page }) => {
 
     
     // Or used filer to click on the element with specific text
-    await page.getByTestId('cta-primary').filter({ hasText: 'Jugar gratis' }).click(); 
+    
+    
+    await page.getByTestId('cta-primary').filter({ hasText: 'Jugar gratis' }).click();
     await page.getByTestId('close').click();
     /* 
     this implicitly waits is to can see the action in the video result, 
@@ -47,12 +49,22 @@ test('How to interact with list of elements', async ({ page }) => {
     
 });
 
-test('How used expect and the diferente methods to do the validations', async ({ page }) => {
-    await expect(page.getByTestId('riotbar:desktopNav:link-internal-patch_notes')).toContainText('Notas de');
+test('How used expect and the diferente methods to do the validations', async ({ page, isMobile }) => {
 
-    await expect(page.getByTestId('masthead-logo')).toBeVisible();       
-    
-    await expect(page.getByTestId('riotbar:desktopNav:link-internal-champions')).toHaveText('Campeones');
+    if (isMobile) {
 
-    await expect(page.locator('//div[@data-testid="blade-content"]//span[text()="Akali"]')).toHaveCount(1);
+        await page.getByTestId('riotbar:mobile:menu:button-open').click();
+        await expect(page.getByTestId('riotbar:mobile:link-patch_notes')).toContainText('Notas de');
+        await expect(page.getByTestId('masthead-logo')).toBeVisible();       
+        await expect(page.getByTestId('riotbar:mobile:link-champions')).toHaveText('Campeones');
+        await expect(page.locator('//div[@data-testid="blade-content"]//span[text()="Akali"]')).toHaveCount(1);
+
+    }else {
+
+        await expect(page.getByTestId('riotbar:desktopNav:link-internal-patch_notes')).toContainText('Notas de');
+        await expect(page.getByTestId('masthead-logo')).toBeVisible();       
+        await expect(page.getByTestId('riotbar:desktopNav:link-internal-champions')).toHaveText('Campeones');
+        await expect(page.locator('//div[@data-testid="blade-content"]//span[text()="Akali"]')).toHaveCount(1);
+
+    }
 });
