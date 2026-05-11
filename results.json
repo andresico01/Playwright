@@ -1,0 +1,452 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\Daniel Correa\\Documents\\Automatizacion\\StrongPlaywrigth\\playwright.config.ts",
+    "rootDir": "C:/Users/Daniel Correa/Documents/Automatizacion/StrongPlaywrigth/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 6
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Daniel Correa/Documents/Automatizacion/StrongPlaywrigth/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/Daniel Correa/Documents/Automatizacion/StrongPlaywrigth/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/Daniel Correa/Documents/Automatizacion/StrongPlaywrigth/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/Daniel Correa/Documents/Automatizacion/StrongPlaywrigth/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/Daniel Correa/Documents/Automatizacion/StrongPlaywrigth/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "Mobile Chrome",
+        "name": "Mobile Chrome",
+        "testDir": "C:/Users/Daniel Correa/Documents/Automatizacion/StrongPlaywrigth/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json",
+        {
+          "outputFile": "results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": {
+      "current": 1,
+      "total": 4
+    },
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.0",
+    "workers": 8,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "basicPlaywright.spec.ts",
+      "file": "basicPlaywright.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "How to interact with list of elements",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10229,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Number of elements with data-testid=\"cta-primary\": 3\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-05-11T15:40:41.718Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Daniel Correa\\Documents\\Automatizacion\\StrongPlaywrigth\\test-results\\basicPlaywright-How-to-interact-with-list-of-elements-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Daniel Correa\\Documents\\Automatizacion\\StrongPlaywrigth\\test-results\\basicPlaywright-How-to-interact-with-list-of-elements-chromium\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f13d6e1523c34e4c463a-9ea0330c484bc02157a0",
+          "file": "basicPlaywright.spec.ts",
+          "line": 8,
+          "column": 5
+        },
+        {
+          "title": "How used expect and the diferente methods to do the validations",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 6484,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-05-11T15:40:41.693Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Daniel Correa\\Documents\\Automatizacion\\StrongPlaywrigth\\test-results\\basicPlaywright-How-used-e-8e90f-thods-to-do-the-validations-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Daniel Correa\\Documents\\Automatizacion\\StrongPlaywrigth\\test-results\\basicPlaywright-How-used-e-8e90f-thods-to-do-the-validations-chromium\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f13d6e1523c34e4c463a-bdb93f129b5fd16134b9",
+          "file": "basicPlaywright.spec.ts",
+          "line": 52,
+          "column": 5
+        },
+        {
+          "title": "Find a env sending for command line",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 7395,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Value of TEST: Problem to get the env variable\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-05-11T15:40:41.726Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Daniel Correa\\Documents\\Automatizacion\\StrongPlaywrigth\\test-results\\basicPlaywright-Find-a-env-sending-for-command-line-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\Daniel Correa\\Documents\\Automatizacion\\StrongPlaywrigth\\test-results\\basicPlaywright-Find-a-env-sending-for-command-line-chromium\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "f13d6e1523c34e4c463a-5a0698ff833feeebf327",
+          "file": "basicPlaywright.spec.ts",
+          "line": 72,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "home.spec.ts",
+      "file": "home.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Home page tests",
+          "file": "home.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "How to interact with list of elements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 7847,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "HomePage.getNoticiasGame",
+                          "duration": 0
+                        }
+                      ],
+                      "startTime": "2026-05-11T15:40:41.711Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Daniel Correa\\Documents\\Automatizacion\\StrongPlaywrigth\\test-results\\home-Home-page-tests-How-to-interact-with-list-of-elements-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Daniel Correa\\Documents\\Automatizacion\\StrongPlaywrigth\\test-results\\home-Home-page-tests-How-to-interact-with-list-of-elements-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d318381359a9b96acb1e-ef4f776ed6d6a8e5df12",
+              "file": "home.spec.ts",
+              "line": 10,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "riot.page.spec.ts",
+      "file": "riot.page.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Test group",
+          "file": "riot.page.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "riot page new",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 9979,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "HomePage.getNoticiasGame",
+                          "duration": 1
+                        },
+                        {
+                          "title": "RiotPage.getCard",
+                          "duration": 1
+                        }
+                      ],
+                      "startTime": "2026-05-11T15:40:41.764Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Daniel Correa\\Documents\\Automatizacion\\StrongPlaywrigth\\test-results\\riot.page-Test-group-riot-page-new-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Daniel Correa\\Documents\\Automatizacion\\StrongPlaywrigth\\test-results\\riot.page-Test-group-riot-page-new-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "33320175f6942cbb0d82-eb916b20df8f423ec40f",
+              "file": "riot.page.spec.ts",
+              "line": 12,
+              "column": 7
+            },
+            {
+              "title": "testing all the cards with MSI 2024",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 9670,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "HomePage.getNoticiasGame",
+                          "duration": 1
+                        },
+                        {
+                          "title": "RiotPage.clickVerMas",
+                          "duration": 412
+                        },
+                        {
+                          "title": "RiotPage.getCard",
+                          "duration": 0
+                        }
+                      ],
+                      "startTime": "2026-05-11T15:40:41.726Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Daniel Correa\\Documents\\Automatizacion\\StrongPlaywrigth\\test-results\\riot.page-Test-group-testing-all-the-cards-with-MSI-2024-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Daniel Correa\\Documents\\Automatizacion\\StrongPlaywrigth\\test-results\\riot.page-Test-group-testing-all-the-cards-with-MSI-2024-chromium\\video.webm"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "33320175f6942cbb0d82-79a0bea8cbe7a2172531",
+              "file": "riot.page.spec.ts",
+              "line": 33,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-05-11T15:40:40.558Z",
+    "duration": 11705.430999999999,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

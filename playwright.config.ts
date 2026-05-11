@@ -1,18 +1,14 @@
 import { defineConfig, devices } from '@playwright/test';
+import env from 'dotenv';
 
-/**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
-// import dotenv from 'dotenv';
-// import path from 'path';
-// dotenv.config({ path: path.resolve(__dirname, '.env') });
 
 /**
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
   testDir: './tests',
+  /* join multiples report in only one.*/ 
+  reporter: process.env.CI ? 'blob' : 'html',
   /* Run tests in files in parallel */
   fullyParallel: true,
   /* Fail the build on CI if you accidentally left test.only in the source code. */
@@ -22,12 +18,16 @@ export default defineConfig({
   /* Opt out of parallel tests on CI. */
   workers: process.env.CI ? 2 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: [
-    ['html'],
-    ['junit', { outputFile: 'results.xml' }],
-  ],
+  reporter: [['json', { outputFile: 'results.json' }]],
+
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
+
+    httpCredentials: {
+      username: process.env.TEST_USER || 'usuarioPorDefecto',
+      password: process.env.TEST_PASSWORD || 'clavePorDefecto',
+    },
+
     /* Base URL to use in actions like `await page.goto('')`. */
     baseURL: 'https://www.leagueoflegends.com/es-es/', 
     trace: 'on-first-retry',      // on-first-retry    
